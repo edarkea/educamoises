@@ -1,5 +1,7 @@
 package vinculacion.educamoises.model;
 
+import java.util.List;
+
 /**
  *
  * @author Edinson Ayui
@@ -12,6 +14,7 @@ public class Cuestionario {
     private String curso;
     private String jornada;
     private String docente;
+    private List<Bloque> bloques;
 
     public Cuestionario() {
     }
@@ -62,6 +65,22 @@ public class Cuestionario {
 
     public void setDocente(String docente) {
         this.docente = docente;
+    }
+
+    public String getEstudiante() {
+        return estudiante;
+    }
+
+    public void setEstudiante(String estudiante) {
+        this.estudiante = estudiante;
+    }
+
+    public List<Bloque> getBloques() {
+        return bloques;
+    }
+
+    public void setBloques(List<Bloque> bloques) {
+        this.bloques = bloques;
     }
 
 }
