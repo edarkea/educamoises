@@ -12,9 +12,11 @@ public class Cuestionario {
     private String estudiante;
     private String fecha;
     private String curso;
+    private String paralelo;
     private String jornada;
     private String docente;
     private List<Bloque> bloques;
+    private Materia materia;
 
     public Cuestionario() {
     }
@@ -81,6 +83,22 @@ public class Cuestionario {
 
     public void setBloques(List<Bloque> bloques) {
         this.bloques = bloques;
+    }
+
+    public String getParalelo() {
+        return paralelo;
+    }
+
+    public void setParalelo(String paralelo) {
+        this.paralelo = paralelo;
+    }
+
+    public Materia getMateria() {
+        return materia;
+    }
+
+    public void setMateria(Materia materia) {
+        this.materia = materia;
     }
 
 }

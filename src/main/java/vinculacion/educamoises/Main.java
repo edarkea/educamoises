@@ -1,7 +1,8 @@
 package vinculacion.educamoises;
 
+import javax.swing.JFrame;
 import vinculacion.educamoises.utils.FrameUtil;
-import vinculacion.educamoises.view.cuestionario.CuestionarioViewController;
+import vinculacion.educamoises.view.MainViewController;
 
 /**
  *
@@ -10,10 +11,10 @@ import vinculacion.educamoises.view.cuestionario.CuestionarioViewController;
 public class Main {
 
     public static void main(String[] args) {
-        
+        test();
     }
 
     public static void test() {
-        FrameUtil.showFrame(new CuestionarioViewController());
+        FrameUtil.showFrame(new MainViewController(),JFrame.EXIT_ON_CLOSE);
     }
 }
