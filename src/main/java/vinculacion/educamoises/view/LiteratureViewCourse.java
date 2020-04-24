@@ -6,12 +6,12 @@ import javax.swing.JPanel;
  *
  * @author Edinson Ayui
  */
-public class MainView extends javax.swing.JPanel {
+public class LiteratureViewCourse extends javax.swing.JPanel {
 
     /**
      * Creates new form MainView
      */
-    public MainView() {
+    public LiteratureViewCourse() {
         initComponents();
         setBackground(new JPanel().getBackground());
     }
@@ -39,7 +39,6 @@ public class MainView extends javax.swing.JPanel {
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
         right = new javax.swing.JPanel();
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -73,7 +72,7 @@ public class MainView extends javax.swing.JPanel {
         text.setFont(new java.awt.Font("Comic Sans MS", 1, 36)); // NOI18N
         text.setForeground(new java.awt.Color(255, 102, 102));
         text.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        text.setText("Escuela Moises Arteaga Valdivieso");
+        text.setText("Lengua y literatura");
         text.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         header.add(text, new java.awt.GridBagConstraints());
 
@@ -119,8 +118,8 @@ public class MainView extends javax.swing.JPanel {
         containerBtn.setMinimumSize(new java.awt.Dimension(629, 370));
 
         jButton3.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btnCiencias.png"))); // NOI18N
-        jButton3.setText("Ciencias");
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btnCursos.png"))); // NOI18N
+        jButton3.setText("3° Basica");
         jButton3.setBorder(null);
         jButton3.setContentAreaFilled(false);
         jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -132,8 +131,8 @@ public class MainView extends javax.swing.JPanel {
         containerBtn.add(jButton3);
 
         jButton4.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btnLiteratura.png"))); // NOI18N
-        jButton4.setText("Literatura");
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btnCursos.png"))); // NOI18N
+        jButton4.setText("5° Basica");
         jButton4.setBorder(null);
         jButton4.setContentAreaFilled(false);
         jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -145,8 +144,8 @@ public class MainView extends javax.swing.JPanel {
         containerBtn.add(jButton4);
 
         jButton5.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btnSociales.png"))); // NOI18N
-        jButton5.setText("Sociales");
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btnCursos.png"))); // NOI18N
+        jButton5.setText("7° Basica");
         jButton5.setBorder(null);
         jButton5.setContentAreaFilled(false);
         jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -156,19 +155,6 @@ public class MainView extends javax.swing.JPanel {
         jButton5.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jButton5.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         containerBtn.add(jButton5);
-
-        jButton2.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btnMatematicas.png"))); // NOI18N
-        jButton2.setText("Matematicas");
-        jButton2.setBorder(null);
-        jButton2.setContentAreaFilled(false);
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton2.setFocusable(false);
-        jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton2.setPreferredSize(new java.awt.Dimension(150, 185));
-        jButton2.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        jButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        containerBtn.add(jButton2);
 
         center.add(containerBtn);
 
@@ -200,7 +186,6 @@ public class MainView extends javax.swing.JPanel {
     private javax.swing.JPanel containerPanels;
     private javax.swing.JPanel footer;
     private javax.swing.JPanel header;
-    public javax.swing.JButton jButton2;
     public javax.swing.JButton jButton3;
     public javax.swing.JButton jButton4;
     public javax.swing.JButton jButton5;

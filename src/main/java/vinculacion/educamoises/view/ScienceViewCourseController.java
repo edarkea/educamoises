@@ -13,11 +13,11 @@ import vinculacion.educamoises.view.cuestionario.CuestionarioViewController;
  *
  * @author Edinson Ayui
  */
-public class MainViewController extends ViewController implements ActionListener,MouseListener {
+public class ScienceViewCourseController extends ViewController implements ActionListener,MouseListener {
 
-    private final MainView view = new MainView();
+    private final ScienceViewCourse view = new ScienceViewCourse();
 
-    public MainViewController() {
+    public ScienceViewCourseController() {
         super(null);
         initEvent();
     }
@@ -30,11 +30,11 @@ public class MainViewController extends ViewController implements ActionListener
     @Override
     public void initEvent() {
         //view.jButton1.addActionListener(this);
-        view.jButton2.addActionListener(this);
+      
         view.jButton3.addActionListener(this);
         view.jButton4.addActionListener(this);
         view.jButton5.addActionListener(this);
-        view.jButton2.addMouseListener(this);
+        
         view.jButton3.addMouseListener(this);
         view.jButton4.addMouseListener(this);
         view.jButton5.addMouseListener(this);
@@ -52,9 +52,7 @@ public class MainViewController extends ViewController implements ActionListener
      /*   if (e.getSource().equals(view.jButton1)) {
          //   view.jTabbedPane1.add(new CuestionarioViewController(view.jTabbedPane1).getView(), "Cuestionarios");
         }*/
-        if (e.getSource().equals(view.jButton2)) {
-
-        }
+   
         if (e.getSource().equals(view.jButton3)) {
 
         }
@@ -86,9 +84,7 @@ public class MainViewController extends ViewController implements ActionListener
 
     @Override
     public void mouseEntered(MouseEvent me) {
-        if (me.getSource().equals(view.jButton2)) {
-            view.jButton2.setForeground(new Color(255, 255, 255));
-        }
+        
         if (me.getSource().equals(view.jButton3)) {
             view.jButton3.setForeground(new Color(255, 255, 255));
         }
@@ -102,9 +98,7 @@ public class MainViewController extends ViewController implements ActionListener
 
     @Override
     public void mouseExited(MouseEvent me) {
-        if (me.getSource().equals(view.jButton2)) {
-            view.jButton2.setForeground(new Color(0, 0, 0));
-        }
+      
         if (me.getSource().equals(view.jButton3)) {
             view.jButton3.setForeground(new Color(0, 0, 0));
         }

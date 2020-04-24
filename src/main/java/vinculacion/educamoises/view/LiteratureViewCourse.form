@@ -97,7 +97,7 @@
                   <Color blue="66" green="66" red="ff" type="rgb"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
-                <Property name="text" type="java.lang.String" value="Escuela Moises Arteaga Valdivieso"/>
+                <Property name="text" type="java.lang.String" value="Lengua y literatura"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
               <Constraints>
@@ -202,9 +202,9 @@
                       <Font name="Comic Sans MS" size="24" style="1"/>
                     </Property>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/images/btnCiencias.png"/>
+                      <Image iconType="3" name="/images/btnCursos.png"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Ciencias"/>
+                    <Property name="text" type="java.lang.String" value="3&#xb0; Basica"/>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
                     </Property>
@@ -230,9 +230,9 @@
                       <Font name="Comic Sans MS" size="24" style="1"/>
                     </Property>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/images/btnLiteratura.png"/>
+                      <Image iconType="3" name="/images/btnCursos.png"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Literatura"/>
+                    <Property name="text" type="java.lang.String" value="5&#xb0; Basica"/>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
                     </Property>
@@ -258,37 +258,9 @@
                       <Font name="Comic Sans MS" size="24" style="1"/>
                     </Property>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/images/btnSociales.png"/>
+                      <Image iconType="3" name="/images/btnCursos.png"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Sociales"/>
-                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                      <Border info="null"/>
-                    </Property>
-                    <Property name="contentAreaFilled" type="boolean" value="false"/>
-                    <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                      <Color id="Cursor de Mano"/>
-                    </Property>
-                    <Property name="focusable" type="boolean" value="false"/>
-                    <Property name="horizontalTextPosition" type="int" value="0"/>
-                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[150, 185]"/>
-                    </Property>
-                    <Property name="verticalAlignment" type="int" value="1"/>
-                    <Property name="verticalTextPosition" type="int" value="3"/>
-                  </Properties>
-                  <AuxValues>
-                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
-                  </AuxValues>
-                </Component>
-                <Component class="javax.swing.JButton" name="jButton2">
-                  <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Comic Sans MS" size="24" style="1"/>
-                    </Property>
-                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/images/btnMatematicas.png"/>
-                    </Property>
-                    <Property name="text" type="java.lang.String" value="Matematicas"/>
+                    <Property name="text" type="java.lang.String" value="7&#xb0; Basica"/>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
                     </Property>
