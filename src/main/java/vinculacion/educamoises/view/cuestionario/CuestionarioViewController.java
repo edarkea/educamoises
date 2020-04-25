@@ -13,7 +13,7 @@ public class CuestionarioViewController extends ViewController {
     private final CuestionarioView view = new CuestionarioView();
 
     public CuestionarioViewController(JTabbedPane plataforma) {
-        super(plataforma);
+ 
         init();
     }
 
@@ -25,10 +25,9 @@ public class CuestionarioViewController extends ViewController {
     @Override
     public void initEvent() {
     }
-
-    @Override
-    public void exit() {
-        this.plataforma.remove(view);
+ @Override
+    public void removeView() {
+       
     }
-
+ 
 }

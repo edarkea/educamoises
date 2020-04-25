@@ -1,34 +1,70 @@
 package vinculacion.educamoises.utils;
 
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
 import javax.swing.JFrame;
+
 import javax.swing.JOptionPane;
-import org.pushingpixels.substance.api.SubstanceLookAndFeel;
+import javax.swing.JPanel;
+import javax.swing.UIManager;
+
+import java.awt.Dimension;
+
+
+
 import vinculacion.educamoises.view.ViewController;
 
-/**
- *
- * @author Edinson Ayui
- */
-public class FrameUtil {
 
+public class FrameUtil {
+  private static JFrame frame; 
+  
+   public static JPanel containerViews;
     public static void showFrame(ViewController viewController, int close) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
-                    JFrame.setDefaultLookAndFeelDecorated(true);
-                    SubstanceLookAndFeel.setSkin("org.pushingpixels.substance.api.skin.NebulaBrickWallSkin");
+
+                    UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+                    
                 } catch (Exception e) {
                     JOptionPane.showMessageDialog(null, "Error Inesperado: " + e.getMessage());
                 }
-                JFrame view = new JFrame();
-                view.setTitle("Educa Moises");
-                view.setSize(800, 600);
-                view.setLocationRelativeTo(null);
-                view.setExtendedState(view.getExtendedState() | JFrame.MAXIMIZED_BOTH);
-                view.setContentPane(viewController.getView());
-                view.setDefaultCloseOperation(close);
-                view.setVisible(true);
+                
+                /*JMenuBar mb=new JMenuBar();
+                JMenu menu=new JMenu("Login");  
+                mb.add(menu);
+                view.setJMenuBar(mb);*/
+                
+                
+		frame = new JFrame();
+                frame.setTitle("Escuela Moises Arteaga Valdivieso");
+                frame.setSize(800, 600);
+                frame.setResizable(true);
+                frame.setMinimumSize(new Dimension(800, 600));
+                frame.setLocationRelativeTo(null);
+                frame.setExtendedState(frame.getExtendedState() | JFrame.MAXIMIZED_BOTH);
+                frame.setLayout(new BorderLayout());
+                containerViews = new JPanel();
+                containerViews.setSize(800, 600);
+                containerViews.setLayout(new GridLayout());
+                frame.setDefaultCloseOperation(close);
+                changeJPanel(viewController);
+                frame.getContentPane().add(containerViews);
+                frame.setVisible(true);
             }
         });
     }
+    
+    public static void changeJPanel(ViewController viewController){
+     
+        
+     containerViews.add(viewController.getView(),BorderLayout.CENTER); 
+     containerViews.updateUI();
+     
+
+    }
+    
+    
+    
+    
 }

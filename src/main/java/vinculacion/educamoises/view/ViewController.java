@@ -10,12 +10,9 @@ import org.pushingpixels.substance.api.SubstanceLookAndFeel;
  */
 public abstract class ViewController {
 
-    public final JTabbedPane plataforma;
+   
 
-    public ViewController(JTabbedPane plataforma) {
-        this.plataforma = plataforma;
-    }
-
+    
     public void init() {
         getView().putClientProperty(SubstanceLookAndFeel.TABBED_PANE_CLOSE_BUTTONS_PROPERTY,
                 Boolean.TRUE);
@@ -26,7 +23,7 @@ public abstract class ViewController {
 
     public abstract void initEvent();
 
-    public void exit() {
-        plataforma.remove(getView());
-    }
+    public abstract void removeView();
+    
+   
 }

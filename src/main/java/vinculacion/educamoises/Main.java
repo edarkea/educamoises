@@ -4,10 +4,7 @@ import javax.swing.JFrame;
 import vinculacion.educamoises.utils.FrameUtil;
 import vinculacion.educamoises.view.MainViewController;
 
-/**
- *
- * @author Edinson Ayui
- */
+
 public class Main {
 
     public static void main(String[] args) {
