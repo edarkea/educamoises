@@ -25,6 +25,9 @@ public class MainView extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenu2 = new javax.swing.JMenu();
         containerPanels = new javax.swing.JPanel();
         header = new javax.swing.JPanel();
         text = new javax.swing.JLabel();
@@ -38,6 +41,12 @@ public class MainView extends javax.swing.JPanel {
         jButton5 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         right = new javax.swing.JPanel();
+
+        jMenu1.setText("File");
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setText("Edit");
+        jMenuBar1.add(jMenu2);
 
         setMinimumSize(new java.awt.Dimension(800, 600));
         setLayout(new java.awt.GridLayout(1, 0));
@@ -64,7 +73,7 @@ public class MainView extends javax.swing.JPanel {
 
         profesor.setBackground(new java.awt.Color(0, 0, 0));
         profesor.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
-        profesor.setText("Profesor");
+        profesor.setText("Login");
         profesor.setBorderPainted(false);
         profesor.setContentAreaFilled(false);
         profesor.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -75,7 +84,7 @@ public class MainView extends javax.swing.JPanel {
         footerLayout.setHorizontalGroup(
             footerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, footerLayout.createSequentialGroup()
-                .addGap(0, 670, Short.MAX_VALUE)
+                .addGap(0, 711, Short.MAX_VALUE)
                 .addComponent(profesor))
         );
         footerLayout.setVerticalGroup(
@@ -209,6 +218,9 @@ public class MainView extends javax.swing.JPanel {
     public javax.swing.JButton jButton3;
     public javax.swing.JButton jButton4;
     public javax.swing.JButton jButton5;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel left;
     public javax.swing.JButton profesor;
     private javax.swing.JPanel right;

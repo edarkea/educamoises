@@ -1,4 +1,4 @@
-package vinculacion.educamoises.view;
+package vinculacion.educamoises.view.ciencias;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -7,6 +7,8 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import javax.swing.JPanel;
 import org.pushingpixels.substance.api.SubstanceLookAndFeel;
+import vinculacion.educamoises.view.MainViewController;
+import vinculacion.educamoises.view.ViewController;
 import static vinculacion.educamoises.utils.FrameUtil.changeJPanel;
 import static vinculacion.educamoises.utils.FrameUtil.containerViews;
 import vinculacion.educamoises.view.cuestionario.CuestionarioViewController;
@@ -15,12 +17,12 @@ import vinculacion.educamoises.view.cuestionario.CuestionarioViewController;
  *
  * @author Edinson Ayui
  */
-public class SocialViewCourseController extends ViewController implements ActionListener,MouseListener {
+public class ScienceViewCourseController extends ViewController implements ActionListener,MouseListener {
 
-    private final SocialViewCourse view = new SocialViewCourse();
+    private final ScienceViewCourse view = new ScienceViewCourse();
 
-    public SocialViewCourseController() {
-    
+    public ScienceViewCourseController() {
+      
         initEvent();
     }
 
@@ -49,7 +51,8 @@ public class SocialViewCourseController extends ViewController implements Action
     public void removeView() {
        containerViews.removeAll();
     }
- 
+  
+
     @Override
     public void actionPerformed(ActionEvent e) {
      /*   if (e.getSource().equals(view.jButton1)) {
@@ -106,6 +109,7 @@ public class SocialViewCourseController extends ViewController implements Action
             System.out.println("hola");
             view.volver.setForeground(new Color(255, 255, 255));
         }
+        
     }
 
     @Override

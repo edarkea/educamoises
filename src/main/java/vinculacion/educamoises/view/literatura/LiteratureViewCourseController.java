@@ -1,4 +1,4 @@
-package vinculacion.educamoises.view;
+package vinculacion.educamoises.view.literatura;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -7,6 +7,8 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import javax.swing.JPanel;
 import org.pushingpixels.substance.api.SubstanceLookAndFeel;
+import vinculacion.educamoises.view.MainViewController;
+import vinculacion.educamoises.view.ViewController;
 import static vinculacion.educamoises.utils.FrameUtil.changeJPanel;
 import static vinculacion.educamoises.utils.FrameUtil.containerViews;
 import vinculacion.educamoises.view.cuestionario.CuestionarioViewController;

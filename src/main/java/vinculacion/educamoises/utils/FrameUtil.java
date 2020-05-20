@@ -9,34 +9,36 @@ import javax.swing.JPanel;
 import javax.swing.UIManager;
 
 import java.awt.Dimension;
-
-
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
 
 import vinculacion.educamoises.view.ViewController;
 
-
 public class FrameUtil {
-  private static JFrame frame; 
-  
-   public static JPanel containerViews;
+
+    private static JFrame frame;
+
+    public static JPanel containerViews;
+
     public static void showFrame(ViewController viewController, int close) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
 
                     UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
-                    
+
                 } catch (Exception e) {
                     JOptionPane.showMessageDialog(null, "Error Inesperado: " + e.getMessage());
                 }
-                
-                /*JMenuBar mb=new JMenuBar();
-                JMenu menu=new JMenu("Login");  
-                mb.add(menu);
-                view.setJMenuBar(mb);*/
-                
-                
-		frame = new JFrame();
+
+                /*JMenuBar mb = new JMenuBar();
+                JMenu menu = new JMenu("Inicio");
+                JMenuItem login = new JMenuItem("Login");
+                menu.add(login);
+                mb.add(menu);*/
+
+                frame = new JFrame();
                 frame.setTitle("Escuela Moises Arteaga Valdivieso");
                 frame.setSize(800, 600);
                 frame.setResizable(true);
@@ -44,6 +46,7 @@ public class FrameUtil {
                 frame.setLocationRelativeTo(null);
                 frame.setExtendedState(frame.getExtendedState() | JFrame.MAXIMIZED_BOTH);
                 frame.setLayout(new BorderLayout());
+
                 containerViews = new JPanel();
                 containerViews.setSize(800, 600);
                 containerViews.setLayout(new GridLayout());
@@ -54,17 +57,12 @@ public class FrameUtil {
             }
         });
     }
-    
-    public static void changeJPanel(ViewController viewController){
-     
-        
-     containerViews.add(viewController.getView(),BorderLayout.CENTER); 
-     containerViews.updateUI();
-     
+
+    public static void changeJPanel(ViewController viewController) {
+
+        containerViews.add(viewController.getView(), BorderLayout.CENTER);
+        containerViews.updateUI();
 
     }
-    
-    
-    
-    
+
 }

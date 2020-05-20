@@ -1,6 +1,9 @@
 package vinculacion.educamoises.view;
 
-import com.sun.org.apache.bcel.internal.generic.AALOAD;
+import vinculacion.educamoises.view.estudios.SocialViewCourseController;
+import vinculacion.educamoises.view.ciencias.ScienceViewCourseController;
+import vinculacion.educamoises.view.matematicas.MathViewCourseController;
+import vinculacion.educamoises.view.literatura.LiteratureViewCourseController;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

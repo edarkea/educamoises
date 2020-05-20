@@ -144,11 +144,13 @@ public class LoginView extends javax.swing.JPanel {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/imgUser.png"))); // NOI18N
 
         jPasswordField1.setBackground(new java.awt.Color(245, 201, 130));
+        jPasswordField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jPasswordField1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
         jTextField3.setBackground(new java.awt.Color(245, 201, 130));
         jTextField3.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        jTextField3.setText("Admi");
+        jTextField3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField3.setText("admin");
         jTextField3.setToolTipText("");
         jTextField3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         jTextField3.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
@@ -257,8 +259,8 @@ public class LoginView extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JTextField jTextField3;
+    public javax.swing.JPasswordField jPasswordField1;
+    public javax.swing.JTextField jTextField3;
     private javax.swing.JPanel left;
     private javax.swing.JPanel right;
     private javax.swing.JLabel text;

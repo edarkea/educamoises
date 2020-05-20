@@ -1,22 +1,45 @@
 package vinculacion.educamoises.model;
 
+import java.io.Serializable;
 import java.util.List;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
 
 /**
  *
  * @author Edinson Ayui
  */
-public class Cuestionario {
+@Entity
+@Table(name = "cuestionarios")
+public class Cuestionario implements Serializable {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    @Column
     private String titulo;
-    private String estudiante;
+    @Column
     private String fecha;
+    @Column
     private String curso;
+    @Column
     private String paralelo;
+    @Column
     private String jornada;
+    @Column
     private String docente;
+    @OneToMany(fetch = FetchType.EAGER)
+    @JoinColumn(name = "cuestionario_id")
     private List<Bloque> bloques;
-    private Materia materia;
+    @Column
+    private int materia;
 
     public Cuestionario() {
     }
@@ -27,14 +50,6 @@ public class Cuestionario {
 
     public void setTitulo(String titulo) {
         this.titulo = titulo;
-    }
-
-    public String getNombre() {
-        return estudiante;
-    }
-
-    public void setNombre(String nombre) {
-        this.estudiante = nombre;
     }
 
     public String getFecha() {
@@ -69,14 +84,6 @@ public class Cuestionario {
         this.docente = docente;
     }
 
-    public String getEstudiante() {
-        return estudiante;
-    }
-
-    public void setEstudiante(String estudiante) {
-        this.estudiante = estudiante;
-    }
-
     public List<Bloque> getBloques() {
         return bloques;
     }
@@ -93,12 +100,20 @@ public class Cuestionario {
         this.paralelo = paralelo;
     }
 
-    public Materia getMateria() {
+    public int getMateria() {
         return materia;
     }
 
-    public void setMateria(Materia materia) {
+    public void setMateria(int materia) {
         this.materia = materia;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
 }

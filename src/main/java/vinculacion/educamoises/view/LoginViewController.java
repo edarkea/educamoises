@@ -11,76 +11,80 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import javax.swing.JPanel;
-import javax.swing.JTabbedPane;
 import static vinculacion.educamoises.utils.FrameUtil.changeJPanel;
 import static vinculacion.educamoises.utils.FrameUtil.containerViews;
+import vinculacion.educamoises.view.cuestionario.CuestionarioViewController;
 
 /**
  *
  * @author fredd
  */
-public class LoginViewController  extends ViewController implements ActionListener,MouseListener{
- private final LoginView view = new LoginView();
- 
+public class LoginViewController extends ViewController implements ActionListener, MouseListener {
+
+    private final LoginView view = new LoginView();
+
     public LoginViewController() {
-        
+
         initEvent();
-        
+
     }
 
     @Override
     public JPanel getView() {
-       return view;
+        return view;
     }
 
     @Override
-    
+
     public void initEvent() {
+        view.jButton1.addActionListener(this);
         view.jButton1.addMouseListener(this);
         view.volver.addMouseListener(this);
         view.volver.addActionListener(this);
     }
 
-     @Override
+    @Override
     public void removeView() {
         containerViews.removeAll();
     }
-    
-      @Override
+
+    @Override
     public void actionPerformed(ActionEvent ae) {
-       if (ae.getSource().equals(view.volver)) {
+        if (ae.getSource().equals(view.volver)) {
             removeView();
             changeJPanel(new MainViewController());
         }
-        
+        if (ae.getSource().equals(view.jButton1)) {
+            removeView();
+            changeJPanel(new CuestionarioViewController());
+        }
+
     }
-    
-    
-    
+
     @Override
     public void mouseClicked(MouseEvent me) {
-        
+
     }
 
     @Override
     public void mousePressed(MouseEvent me) {
-       
+
     }
 
     @Override
     public void mouseReleased(MouseEvent me) {
-        
+
     }
 
     @Override
     public void mouseEntered(MouseEvent me) {
-       if (me.getSource().equals(view.jButton1)) {
+        if (me.getSource().equals(view.jButton1)) {
             view.jButton1.setForeground(new Color(255, 255, 255));
-            view.jButton1.setBackground(new Color(237,173,57));
+            view.jButton1.setBackground(new Color(237, 173, 57));
         }
-       
-         if (me.getSource().equals(view.volver)) {
-            
+
+        if (me.getSource().equals(view.volver)) {
+
             view.volver.setForeground(new Color(255, 255, 255));
         }
 
@@ -90,14 +94,13 @@ public class LoginViewController  extends ViewController implements ActionListen
     public void mouseExited(MouseEvent me) {
         if (me.getSource().equals(view.jButton1)) {
             view.jButton1.setForeground(new Color(0, 0, 0));
-            view.jButton1.setBackground(new Color(245,201,130));
+            view.jButton1.setBackground(new Color(245, 201, 130));
         }
-        
-          if (me.getSource().equals(view.volver)) {
-           
+
+        if (me.getSource().equals(view.volver)) {
+
             view.volver.setForeground(new Color(0, 0, 0));
         }
     }
 
-  
 }

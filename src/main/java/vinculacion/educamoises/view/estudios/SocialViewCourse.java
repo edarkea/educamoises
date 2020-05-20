@@ -1,4 +1,4 @@
-package vinculacion.educamoises.view;
+package vinculacion.educamoises.view.estudios;
 
 import javax.swing.JPanel;
 
@@ -6,12 +6,12 @@ import javax.swing.JPanel;
  *
  * @author Edinson Ayui
  */
-public class LiteratureViewCourse extends javax.swing.JPanel {
+public class SocialViewCourse extends javax.swing.JPanel {
 
     /**
      * Creates new form MainView
      */
-    public LiteratureViewCourse() {
+    public SocialViewCourse() {
         initComponents();
         setBackground(new JPanel().getBackground());
     }
@@ -73,7 +73,7 @@ public class LiteratureViewCourse extends javax.swing.JPanel {
         text.setFont(new java.awt.Font("Comic Sans MS", 1, 36)); // NOI18N
         text.setForeground(new java.awt.Color(255, 102, 102));
         text.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        text.setText("Lengua y literatura");
+        text.setText("Estudios Sociales");
         text.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         header.add(text, new java.awt.GridBagConstraints());
 
@@ -178,11 +178,11 @@ public class LiteratureViewCourse extends javax.swing.JPanel {
         right.setLayout(rightLayout);
         rightLayout.setHorizontalGroup(
             rightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
         rightLayout.setVerticalGroup(
             rightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
 
         containerPanels.add(right, java.awt.BorderLayout.EAST);

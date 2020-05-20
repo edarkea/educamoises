@@ -1,4 +1,4 @@
-package vinculacion.educamoises.view;
+package vinculacion.educamoises.view.matematicas;
 
 import javax.swing.JPanel;
 
@@ -6,12 +6,12 @@ import javax.swing.JPanel;
  *
  * @author Edinson Ayui
  */
-public class SocialViewCourse extends javax.swing.JPanel {
+public class MathViewCourse extends javax.swing.JPanel {
 
     /**
      * Creates new form MainView
      */
-    public SocialViewCourse() {
+    public MathViewCourse() {
         initComponents();
         setBackground(new JPanel().getBackground());
     }
@@ -73,7 +73,7 @@ public class SocialViewCourse extends javax.swing.JPanel {
         text.setFont(new java.awt.Font("Comic Sans MS", 1, 36)); // NOI18N
         text.setForeground(new java.awt.Color(255, 102, 102));
         text.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        text.setText("Estudios Sociales");
+        text.setText("Matemáticas");
         text.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         header.add(text, new java.awt.GridBagConstraints());
 

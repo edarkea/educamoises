@@ -1,19 +1,22 @@
-package vinculacion.educamoises.view;
+package vinculacion.educamoises.view.ciencias;
 
+import javax.swing.JFrame;
 import javax.swing.JPanel;
+import vinculacion.educamoises.utils.FrameUtil;
 
 /**
  *
  * @author Edinson Ayui
  */
-public class MathViewCourse extends javax.swing.JPanel {
+public class ScienceViewCourse extends javax.swing.JPanel {
 
     /**
      * Creates new form MainView
      */
-    public MathViewCourse() {
+    public ScienceViewCourse() {
         initComponents();
-        setBackground(new JPanel().getBackground());
+     //  setBackground(new JPanel().getBackground());
+
     }
 
     /**
@@ -73,7 +76,7 @@ public class MathViewCourse extends javax.swing.JPanel {
         text.setFont(new java.awt.Font("Comic Sans MS", 1, 36)); // NOI18N
         text.setForeground(new java.awt.Color(255, 102, 102));
         text.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        text.setText("Matemáticas");
+        text.setText("Ciencias Naturales");
         text.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         header.add(text, new java.awt.GridBagConstraints());
 
