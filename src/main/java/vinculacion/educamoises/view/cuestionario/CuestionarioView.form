@@ -57,7 +57,7 @@
                   <Color blue="66" green="66" red="ff" type="rgb"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
-                <Property name="text" type="java.lang.String" value="Creaci&#xf3;n De Cuestionario"/>
+                <Property name="text" type="java.lang.String" value="Lista de Cuestionarios"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
               <Constraints>
@@ -111,7 +111,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Comic Sans MS" size="24" style="1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Siguiente"/>
+                <Property name="text" type="java.lang.String" value="Crear"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                   <Color id="Cursor de Mano"/>

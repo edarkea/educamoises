@@ -40,6 +40,7 @@ public class MainView extends javax.swing.JPanel {
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
         right = new javax.swing.JPanel();
 
         jMenu1.setText("File");
@@ -180,6 +181,20 @@ public class MainView extends javax.swing.JPanel {
         jButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         containerBtn.add(jButton2);
 
+        jButton6.setBackground(new java.awt.Color(0, 0, 0));
+        jButton6.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btnCursos.png"))); // NOI18N
+        jButton6.setText("Juegos");
+        jButton6.setBorder(null);
+        jButton6.setContentAreaFilled(false);
+        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton6.setFocusable(false);
+        jButton6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton6.setPreferredSize(new java.awt.Dimension(150, 185));
+        jButton6.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jButton6.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        containerBtn.add(jButton6);
+
         center.add(containerBtn);
 
         containerPanels.add(center, java.awt.BorderLayout.CENTER);
@@ -218,6 +233,7 @@ public class MainView extends javax.swing.JPanel {
     public javax.swing.JButton jButton3;
     public javax.swing.JButton jButton4;
     public javax.swing.JButton jButton5;
+    public javax.swing.JButton jButton6;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;

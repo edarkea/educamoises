@@ -92,9 +92,9 @@ public class SocialViewCourse extends javax.swing.JPanel {
         footer.setLayout(footerLayout);
         footerLayout.setHorizontalGroup(
             footerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, footerLayout.createSequentialGroup()
-                .addGap(0, 600, Short.MAX_VALUE)
-                .addComponent(volver, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(footerLayout.createSequentialGroup()
+                .addComponent(volver, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 600, Short.MAX_VALUE))
         );
         footerLayout.setVerticalGroup(
             footerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -130,7 +130,7 @@ public class SocialViewCourse extends javax.swing.JPanel {
 
         jButton3.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btnCursos.png"))); // NOI18N
-        jButton3.setText("3° Basica");
+        jButton3.setText("3° Básica");
         jButton3.setBorder(null);
         jButton3.setContentAreaFilled(false);
         jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -143,7 +143,7 @@ public class SocialViewCourse extends javax.swing.JPanel {
 
         jButton4.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btnCursos.png"))); // NOI18N
-        jButton4.setText("5° Basica");
+        jButton4.setText("5° Básica");
         jButton4.setBorder(null);
         jButton4.setContentAreaFilled(false);
         jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -156,7 +156,7 @@ public class SocialViewCourse extends javax.swing.JPanel {
 
         jButton5.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btnCursos.png"))); // NOI18N
-        jButton5.setText("7° Basica");
+        jButton5.setText("7° Básica");
         jButton5.setBorder(null);
         jButton5.setContentAreaFilled(false);
         jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));

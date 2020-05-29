@@ -37,6 +37,7 @@ public class ScienceViewCourse extends javax.swing.JPanel {
         text = new javax.swing.JLabel();
         footer = new javax.swing.JPanel();
         volver = new javax.swing.JButton();
+        Siguiente = new javax.swing.JButton();
         left = new javax.swing.JPanel();
         center = new javax.swing.JPanel();
         containerBtn = new javax.swing.JPanel();
@@ -91,19 +92,32 @@ public class ScienceViewCourse extends javax.swing.JPanel {
         volver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         volver.setFocusable(false);
 
+        Siguiente.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
+        Siguiente.setText("Siguiente");
+        Siguiente.setContentAreaFilled(false);
+        Siguiente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Siguiente.setFocusable(false);
+
         javax.swing.GroupLayout footerLayout = new javax.swing.GroupLayout(footer);
         footer.setLayout(footerLayout);
         footerLayout.setHorizontalGroup(
             footerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, footerLayout.createSequentialGroup()
-                .addGap(0, 600, Short.MAX_VALUE)
-                .addComponent(volver, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(footerLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(volver, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 388, Short.MAX_VALUE)
+                .addComponent(Siguiente, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         footerLayout.setVerticalGroup(
             footerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(footerLayout.createSequentialGroup()
                 .addComponent(volver)
                 .addGap(0, 50, Short.MAX_VALUE))
+            .addGroup(footerLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Siguiente)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         containerPanels.add(footer, java.awt.BorderLayout.SOUTH);
@@ -195,8 +209,9 @@ public class ScienceViewCourse extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton Siguiente;
     private javax.swing.JPanel center;
-    private javax.swing.JPanel containerBtn;
+    public javax.swing.JPanel containerBtn;
     private javax.swing.JPanel containerPanels;
     private javax.swing.JPanel footer;
     private javax.swing.JPanel header;
@@ -209,7 +224,7 @@ public class ScienceViewCourse extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel left;
     private javax.swing.JPanel right;
-    private javax.swing.JLabel text;
+    public javax.swing.JLabel text;
     public javax.swing.JButton volver;
     // End of variables declaration//GEN-END:variables
 }

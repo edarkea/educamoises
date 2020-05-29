@@ -5,6 +5,8 @@
  */
 package vinculacion.educamoises.view.cuestionario;
 
+import vinculacion.educamoises.model.Materia;
+
 /**
  *
  * @author fredd
@@ -16,6 +18,11 @@ public class CuestionarioView1 extends javax.swing.JPanel {
      */
     public CuestionarioView1() {
         initComponents();
+        jComboBox2.addItem(Materia.MATEMATICAS);
+        jComboBox2.addItem(Materia.LENGUA);
+        jComboBox2.addItem(Materia.COMPUTACION);
+        jComboBox2.addItem(Materia.ESTUDIOS);
+        jComboBox2.addItem(Materia.CIENCIAS);
     }
 
     /**
@@ -92,7 +99,6 @@ public class CuestionarioView1 extends javax.swing.JPanel {
         jPanel5.add(jLabel4);
 
         jComboBox2.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Lenguaje", "Matematicas", "Sociales", "Ciencias" }));
         jComboBox2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         jComboBox2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jComboBox2.setFocusable(false);
@@ -127,8 +133,8 @@ public class CuestionarioView1 extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
+    public javax.swing.JComboBox<String> jComboBox1;
+    public javax.swing.JComboBox<Materia> jComboBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -137,8 +143,8 @@ public class CuestionarioView1 extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField3;
+    public javax.swing.JTextField jTextField1;
+    public javax.swing.JTextField jTextField3;
     public javax.swing.JPanel view1;
     // End of variables declaration//GEN-END:variables
 }

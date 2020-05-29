@@ -139,19 +139,19 @@ public class MultipleView extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JCheckBox jCheckBox2;
-    private javax.swing.JCheckBox jCheckBox3;
-    private javax.swing.JCheckBox jCheckBox4;
+    public javax.swing.JButton jButton1;
+    public javax.swing.JCheckBox jCheckBox1;
+    public javax.swing.JCheckBox jCheckBox2;
+    public javax.swing.JCheckBox jCheckBox3;
+    public javax.swing.JCheckBox jCheckBox4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel9;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
+    public javax.swing.JTextField jTextField1;
+    public javax.swing.JTextField jTextField2;
+    public javax.swing.JTextField jTextField3;
+    public javax.swing.JTextField jTextField4;
+    public javax.swing.JTextField jTextField5;
     // End of variables declaration//GEN-END:variables
 }

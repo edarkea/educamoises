@@ -87,11 +87,11 @@ public class AbiertaView extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    public javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel9;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
+    public javax.swing.JTextField jTextField1;
+    public javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 }

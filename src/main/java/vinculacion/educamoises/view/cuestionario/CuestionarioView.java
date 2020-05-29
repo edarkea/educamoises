@@ -45,7 +45,7 @@ public class CuestionarioView extends javax.swing.JPanel {
         text.setFont(new java.awt.Font("Comic Sans MS", 1, 36)); // NOI18N
         text.setForeground(new java.awt.Color(255, 102, 102));
         text.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        text.setText("Creación De Cuestionario");
+        text.setText("Lista de Cuestionarios");
         text.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         header.add(text, new java.awt.GridBagConstraints());
 
@@ -55,7 +55,7 @@ public class CuestionarioView extends javax.swing.JPanel {
         footer.setPreferredSize(new java.awt.Dimension(800, 100));
 
         siguiente.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
-        siguiente.setText("Siguiente");
+        siguiente.setText("Crear");
         siguiente.setContentAreaFilled(false);
         siguiente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         siguiente.setFocusable(false);

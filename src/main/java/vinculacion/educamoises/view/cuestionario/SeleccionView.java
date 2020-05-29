@@ -148,7 +148,7 @@ public class SeleccionView extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    public javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel5;
@@ -157,10 +157,10 @@ public class SeleccionView extends javax.swing.JPanel {
     public javax.swing.JRadioButton jRadioButton2;
     public javax.swing.JRadioButton jRadioButton3;
     public javax.swing.JRadioButton jRadioButton4;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
+    public javax.swing.JTextField jTextField1;
+    public javax.swing.JTextField jTextField2;
+    public javax.swing.JTextField jTextField3;
+    public javax.swing.JTextField jTextField4;
+    public javax.swing.JTextField jTextField5;
     // End of variables declaration//GEN-END:variables
 }

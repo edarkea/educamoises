@@ -5,13 +5,12 @@ import vinculacion.educamoises.view.ViewController;
 
 public class AbiertaViewController extends ViewController {
 
-    private final AbiertaView view = new AbiertaView();
-    
-    public   AbiertaViewController(){
-    init();
+    public final AbiertaView view = new AbiertaView();
+
+    public AbiertaViewController() {
+        init();
     }
-    
-    
+
     @Override
     public JPanel getView() {
         return view;
@@ -25,6 +24,11 @@ public class AbiertaViewController extends ViewController {
     @Override
     public void removeView() {
 
+    }
+
+    void limpiar() {
+        view.jTextField1.setText("");
+        view.jTextField2.setText("");
     }
 
 }

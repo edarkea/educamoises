@@ -34,7 +34,7 @@ public class CuestionarioView2 extends javax.swing.JPanel {
         jRadioButton3 = new javax.swing.JRadioButton();
         containerCuestionario = new javax.swing.JPanel();
 
-        setLayout(new java.awt.GridLayout(1, 0));
+        setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.Y_AXIS));
 
         view2.setLayout(new java.awt.BorderLayout());
 

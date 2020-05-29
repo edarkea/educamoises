@@ -193,7 +193,7 @@ public class MathViewCourse extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel center;
-    private javax.swing.JPanel containerBtn;
+    public javax.swing.JPanel containerBtn;
     private javax.swing.JPanel containerPanels;
     private javax.swing.JPanel footer;
     private javax.swing.JPanel header;

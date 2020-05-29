@@ -1,7 +1,9 @@
 package vinculacion.educamoises.model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -35,9 +37,9 @@ public class Cuestionario implements Serializable {
     private String jornada;
     @Column
     private String docente;
-    @OneToMany(fetch = FetchType.EAGER)
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "cuestionario_id")
-    private List<Bloque> bloques;
+    private List<Bloque> bloques = new ArrayList<>();
     @Column
     private int materia;
 

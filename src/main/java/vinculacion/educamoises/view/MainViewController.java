@@ -1,9 +1,5 @@
 package vinculacion.educamoises.view;
 
-import vinculacion.educamoises.view.estudios.SocialViewCourseController;
-import vinculacion.educamoises.view.ciencias.ScienceViewCourseController;
-import vinculacion.educamoises.view.matematicas.MathViewCourseController;
-import vinculacion.educamoises.view.literatura.LiteratureViewCourseController;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -14,8 +10,7 @@ import javax.swing.JPanel;
 
 import static vinculacion.educamoises.utils.FrameUtil.changeJPanel;
 import static vinculacion.educamoises.utils.FrameUtil.containerViews;
-
-
+import vinculacion.educamoises.view.evaluacion.EvaluationViewController;
 
 /**
  *
@@ -41,11 +36,13 @@ public class MainViewController extends ViewController implements ActionListener
         view.jButton3.addActionListener(this);
         view.jButton4.addActionListener(this);
         view.jButton5.addActionListener(this);
+        view.jButton6.addActionListener(this);
         view.profesor.addActionListener(this);
         view.jButton2.addMouseListener(this);
         view.jButton3.addMouseListener(this);
         view.jButton4.addMouseListener(this);
         view.jButton5.addMouseListener(this);
+        view.jButton6.addMouseListener(this);
         view.profesor.addMouseListener(this);
     }
 
@@ -56,30 +53,33 @@ public class MainViewController extends ViewController implements ActionListener
 
     @Override
     public void actionPerformed(ActionEvent e) {
-    
+
         if (e.getSource().equals(view.jButton2)) {
             removeView();
-            changeJPanel(new MathViewCourseController());
+            changeJPanel(new EvaluationViewController(1L, 52L, 103L, "Matemáticas"));
         }
         if (e.getSource().equals(view.jButton3)) {
-
             removeView();
-            changeJPanel(new ScienceViewCourseController());
+            changeJPanel(new EvaluationViewController(149L, 200L, 251L, "Ciencias Naturales"));
         }
         if (e.getSource().equals(view.jButton4)) {
             removeView();
-            changeJPanel(new LiteratureViewCourseController());
+            changeJPanel(new EvaluationViewController(14L, 0l, 0L, "Lengua y Literatura"));
         }
         if (e.getSource().equals(view.jButton5)) {
             removeView();
-            changeJPanel(new SocialViewCourseController());
+            changeJPanel(new EvaluationViewController(302L, 353l, 406L, "Estudios Sociales"));
         }
-        
-         if (e.getSource().equals(view.profesor)) {
+        if (e.getSource().equals(view.jButton6)) {
+            removeView();
+            changeJPanel(new JuegosMainViewController());
+        }
+
+        if (e.getSource().equals(view.profesor)) {
             removeView();
             changeJPanel(new LoginViewController());
         }
-       
+
     }
 
     @Override
@@ -111,12 +111,13 @@ public class MainViewController extends ViewController implements ActionListener
         if (me.getSource().equals(view.jButton5)) {
             view.jButton5.setForeground(new Color(255, 255, 255));
         }
+        if (me.getSource().equals(view.jButton6)) {
+            view.jButton6.setForeground(new Color(255, 255, 255));
+        }
         if (me.getSource().equals(view.profesor)) {
             view.profesor.setForeground(new Color(255, 255, 255));
         }
-        
-        
-        
+
     }
 
     @Override
@@ -133,7 +134,7 @@ public class MainViewController extends ViewController implements ActionListener
         if (me.getSource().equals(view.jButton5)) {
             view.jButton5.setForeground(new Color(0, 0, 0));
         }
-         if (me.getSource().equals(view.profesor)) {
+        if (me.getSource().equals(view.profesor)) {
             view.profesor.setForeground(new Color(0, 0, 0));
         }
     }

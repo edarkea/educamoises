@@ -3,6 +3,7 @@ package vinculacion.educamoises.model;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -25,7 +26,7 @@ public class Bloque implements Comparable<Bloque>, Serializable {
     private Long id;
     @Column private Integer numero;
     @Column private String descripcion;
-    @OneToMany(fetch = FetchType.EAGER)
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "bloque_id")
     private List<Pregunta> preguntas = new ArrayList<>();
 

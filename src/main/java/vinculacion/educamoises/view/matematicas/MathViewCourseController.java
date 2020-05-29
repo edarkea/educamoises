@@ -6,12 +6,10 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import javax.swing.JPanel;
-import org.pushingpixels.substance.api.SubstanceLookAndFeel;
 import vinculacion.educamoises.view.MainViewController;
 import vinculacion.educamoises.view.ViewController;
 import static vinculacion.educamoises.utils.FrameUtil.changeJPanel;
 import static vinculacion.educamoises.utils.FrameUtil.containerViews;
-import vinculacion.educamoises.view.cuestionario.CuestionarioViewController;
 
 /**
  *
@@ -20,6 +18,7 @@ import vinculacion.educamoises.view.cuestionario.CuestionarioViewController;
 public class MathViewCourseController extends ViewController implements ActionListener, MouseListener {
 
     private final MathViewCourse view = new MathViewCourse();
+    private JuegoController viewJuego;
 
     public MathViewCourseController() {
 
@@ -39,17 +38,29 @@ public class MathViewCourseController extends ViewController implements ActionLi
         view.jButton4.addActionListener(this);
         view.jButton5.addActionListener(this);
         view.volver.addActionListener(this);
-        
+
         view.jButton3.addMouseListener(this);
         view.jButton4.addMouseListener(this);
         view.jButton5.addMouseListener(this);
-view.volver.addMouseListener(this);
+        view.volver.addMouseListener(this);
         // view.jButton6.addActionListener(this);
     }
 
     @Override
     public void removeView() {
         containerViews.removeAll();
+    }
+
+    public void removeContainer() {
+        view.containerBtn.removeAll();
+    }
+
+    public void addContainer(ViewController viewController) {
+        view.containerBtn.add(viewController.getView());
+    }
+
+    public void updateContainer() {
+        view.containerBtn.updateUI();
     }
 
     @Override
@@ -59,16 +70,25 @@ view.volver.addMouseListener(this);
         }*/
 
         if (e.getSource().equals(view.jButton3)) {
-
+            viewJuego = new JuegoController("3");
+            removeContainer();
+            addContainer(viewJuego);
+            updateContainer();
         }
         if (e.getSource().equals(view.jButton4)) {
-
+            viewJuego = new JuegoController("5");
+            removeContainer();
+            addContainer(viewJuego);
+            updateContainer();
         }
         if (e.getSource().equals(view.jButton5)) {
-
+            viewJuego = new JuegoController("7");
+            removeContainer();
+            addContainer(viewJuego);
+            updateContainer();
         }
-        
-         if (e.getSource().equals(view.volver)) {
+
+        if (e.getSource().equals(view.volver)) {
             removeView();
             changeJPanel(new MainViewController());
         }
@@ -104,9 +124,8 @@ view.volver.addMouseListener(this);
         if (me.getSource().equals(view.jButton5)) {
             view.jButton5.setForeground(new Color(255, 255, 255));
         }
-        
-         if (me.getSource().equals(view.volver)) {
-            System.out.println("hola");
+
+        if (me.getSource().equals(view.volver)) {
             view.volver.setForeground(new Color(255, 255, 255));
         }
     }
@@ -123,7 +142,7 @@ view.volver.addMouseListener(this);
         if (me.getSource().equals(view.jButton5)) {
             view.jButton5.setForeground(new Color(0, 0, 0));
         }
-            if (me.getSource().equals(view.volver)) {
+        if (me.getSource().equals(view.volver)) {
             System.out.println("hola");
             view.volver.setForeground(new Color(0, 0, 0));
         }
