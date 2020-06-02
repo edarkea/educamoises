@@ -6,10 +6,11 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import javax.swing.JPanel;
+import static vinculacion.educamoises.utils.FrameUtil.changeJPanel;
 import vinculacion.educamoises.view.MainViewController;
 import vinculacion.educamoises.view.ViewController;
-import static vinculacion.educamoises.utils.FrameUtil.changeJPanel;
 import static vinculacion.educamoises.utils.FrameUtil.containerViews;
+import vinculacion.educamoises.view.literatura.juego.AhorcadoViewController;
 
 /**
  *
@@ -37,7 +38,7 @@ public class LiteratureViewCourseController extends ViewController implements Ac
         view.jButton4.addActionListener(this);
         view.jButton5.addActionListener(this);
         view.volver.addActionListener(this);
-        
+
         view.jButton3.addMouseListener(this);
         view.jButton4.addMouseListener(this);
         view.jButton5.addMouseListener(this);
@@ -58,13 +59,16 @@ public class LiteratureViewCourseController extends ViewController implements Ac
         }*/
 
         if (e.getSource().equals(view.jButton3)) {
-
+            removeView();
+            changeJPanel(new AhorcadoViewController());
         }
         if (e.getSource().equals(view.jButton4)) {
-
+            removeView();
+            changeJPanel(new AhorcadoViewController());
         }
         if (e.getSource().equals(view.jButton5)) {
-
+            removeView();
+            changeJPanel(new AhorcadoViewController());
         }
 
         if (e.getSource().equals(view.volver)) {
@@ -105,7 +109,7 @@ public class LiteratureViewCourseController extends ViewController implements Ac
         }
 
         if (me.getSource().equals(view.volver)) {
-            
+
             view.volver.setForeground(new Color(255, 255, 255));
         }
 
@@ -124,7 +128,7 @@ public class LiteratureViewCourseController extends ViewController implements Ac
             view.jButton5.setForeground(new Color(0, 0, 0));
         }
         if (me.getSource().equals(view.volver)) {
-           
+
             view.volver.setForeground(new Color(0, 0, 0));
         }
     }

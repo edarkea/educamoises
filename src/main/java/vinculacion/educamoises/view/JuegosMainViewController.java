@@ -10,7 +10,9 @@ import javax.swing.JPanel;
 
 import static vinculacion.educamoises.utils.FrameUtil.changeJPanel;
 import static vinculacion.educamoises.utils.FrameUtil.containerViews;
+import vinculacion.educamoises.view.ciencias.ScienceViewCourseController;
 import vinculacion.educamoises.view.estudios.SocialViewCourseController;
+import vinculacion.educamoises.view.literatura.LiteratureViewCourseController;
 import vinculacion.educamoises.view.matematicas.MathViewCourseController;
 
 /**
@@ -59,11 +61,11 @@ public class JuegosMainViewController extends ViewController implements ActionLi
         }
         if (e.getSource().equals(view.jButton3)) {
             removeView();
-//            changeJPanel(new EvaluationViewController(14L, 0l, 0L, "Ciencias Naturales"));
+            changeJPanel(new ScienceViewCourseController());
         }
         if (e.getSource().equals(view.jButton4)) {
             removeView();
-//            changeJPanel(new EvaluationViewController(14L, 0l, 0L, "Lengua y Literatura"));
+            changeJPanel(new LiteratureViewCourseController());
         }
         if (e.getSource().equals(view.jButton5)) {
             removeView();

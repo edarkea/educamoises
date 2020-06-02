@@ -11,6 +11,7 @@ import vinculacion.educamoises.view.MainViewController;
 import vinculacion.educamoises.view.ViewController;
 import static vinculacion.educamoises.utils.FrameUtil.changeJPanel;
 import static vinculacion.educamoises.utils.FrameUtil.containerViews;
+import vinculacion.educamoises.view.ciencias.juego.JuegoController;
 
 /**
  *
@@ -19,6 +20,7 @@ import static vinculacion.educamoises.utils.FrameUtil.containerViews;
 public class ScienceViewCourseController extends ViewController implements ActionListener, MouseListener {
 
     private final ScienceViewCourse view = new ScienceViewCourse();
+    private  JuegoController viewJuego;
 
     public ScienceViewCourseController() {
         initEvent();
@@ -59,11 +61,22 @@ public class ScienceViewCourseController extends ViewController implements Actio
         }*/
 
         if (e.getSource().equals(view.jButton3)) {
-            
+            viewJuego = new JuegoController("3");
+            removeContainer();
+            addContainer(viewJuego);
+            updateContainer();
         }
         if (e.getSource().equals(view.jButton4)) {
+            viewJuego = new JuegoController("5");
+            removeContainer();
+            addContainer(viewJuego);
+            updateContainer();
         }
         if (e.getSource().equals(view.jButton5)) {
+            viewJuego = new JuegoController("7");
+            removeContainer();
+            addContainer(viewJuego);
+            updateContainer();
         }
 
         if (e.getSource().equals(view.volver)) {
@@ -141,5 +154,17 @@ public class ScienceViewCourseController extends ViewController implements Actio
 
     public void addView(JPanel view) {
         this.view.containerBtn.add(view, BorderLayout.CENTER);
+    }
+
+    public void removeContainer() {
+        view.containerBtn.removeAll();
+    }
+
+    public void addContainer(ViewController viewController) {
+        view.containerBtn.add(viewController.getView());
+    }
+
+    public void updateContainer() {
+        view.containerBtn.updateUI();
     }
 }

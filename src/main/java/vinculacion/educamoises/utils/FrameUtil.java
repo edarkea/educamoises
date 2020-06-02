@@ -56,7 +56,6 @@ public class FrameUtil {
     }
 
     public static void changeJPanel(ViewController viewController) {
-
         containerViews.add(viewController.getView(), BorderLayout.CENTER);
         containerViews.updateUI();
 

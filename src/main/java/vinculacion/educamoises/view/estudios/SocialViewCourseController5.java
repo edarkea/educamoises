@@ -14,7 +14,6 @@ import static vinculacion.educamoises.utils.FrameUtil.changeJPanel;
 import static vinculacion.educamoises.utils.FrameUtil.containerViews;
 import vinculacion.educamoises.view.ViewController;
 
-
 /**
  *
  * @author Ana
@@ -32,27 +31,27 @@ public class SocialViewCourseController5 extends ViewController implements Actio
         initEvent();
         recargar();
     }
-    
-    public void recargar(){
+
+    public void recargar() {
         numbers1 = getCardNumbers();
         numbers2 = getCardNumbers();
 
-        view.btnE1.setDisabledIcon(new ImageIcon("C:\\Users\\ANA\\Downloads\\educamoises\\src\\main\\java\\imagenes\\re" + numbers1[0] + ".png"));
-        view.btnE2.setDisabledIcon(new ImageIcon("C:\\Users\\ANA\\Downloads\\educamoises\\src\\main\\java\\imagenes\\re" + numbers2[0] + ".png"));
-        view.btnE3.setDisabledIcon(new ImageIcon("C:\\Users\\ANA\\Downloads\\educamoises\\src\\main\\java\\imagenes\\re" + numbers1[1] + ".png"));
-        view.btnE4.setDisabledIcon(new ImageIcon("C:\\Users\\ANA\\Downloads\\educamoises\\src\\main\\java\\imagenes\\re" + numbers2[1] + ".png"));
-        view.btnE5.setDisabledIcon(new ImageIcon("C:\\Users\\ANA\\Downloads\\educamoises\\src\\main\\java\\imagenes\\re" + numbers1[2] + ".png"));
-        view.btnE6.setDisabledIcon(new ImageIcon("C:\\Users\\ANA\\Downloads\\educamoises\\src\\main\\java\\imagenes\\re" + numbers2[2] + ".png"));
-        view.btnE7.setDisabledIcon(new ImageIcon("C:\\Users\\ANA\\Downloads\\educamoises\\src\\main\\java\\imagenes\\re" + numbers1[3] + ".png"));
-        view.btnE8.setDisabledIcon(new ImageIcon("C:\\Users\\ANA\\Downloads\\educamoises\\src\\main\\java\\imagenes\\re" + numbers2[3] + ".png"));
-        view.btnE9.setDisabledIcon(new ImageIcon("C:\\Users\\ANA\\Downloads\\educamoises\\src\\main\\java\\imagenes\\re" + numbers1[4] + ".png"));
-        view.btnE10.setDisabledIcon(new ImageIcon("C:\\Users\\ANA\\Downloads\\educamoises\\src\\main\\java\\imagenes\\re" + numbers2[4] + ".png"));
-        view.btnE11.setDisabledIcon(new ImageIcon("C:\\Users\\ANA\\Downloads\\educamoises\\src\\main\\java\\imagenes\\re" + numbers1[5] + ".png"));
-        view.btnE12.setDisabledIcon(new ImageIcon("C:\\Users\\ANA\\Downloads\\educamoises\\src\\main\\java\\imagenes\\re" + numbers2[5] + ".png"));
-        view.btnE13.setDisabledIcon(new ImageIcon("C:\\Users\\ANA\\Downloads\\educamoises\\src\\main\\java\\imagenes\\re" + numbers1[6] + ".png"));
-        view.btnE14.setDisabledIcon(new ImageIcon("C:\\Users\\ANA\\Downloads\\educamoises\\src\\main\\java\\imagenes\\re" + numbers2[6] + ".png"));
-        view.btnE15.setDisabledIcon(new ImageIcon("C:\\Users\\ANA\\Downloads\\educamoises\\src\\main\\java\\imagenes\\re" + numbers1[7] + ".png"));
-        view.btnE16.setDisabledIcon(new ImageIcon("C:\\Users\\ANA\\Downloads\\educamoises\\src\\main\\java\\imagenes\\re" + numbers2[7] + ".png"));
+        view.btnE1.setDisabledIcon(new ImageIcon(getClass().getResource("/images/studios/re" + numbers1[0] + ".png")));
+        view.btnE2.setDisabledIcon(new ImageIcon(getClass().getResource("/images/studios/re" + numbers2[0] + ".png")));
+        view.btnE3.setDisabledIcon(new ImageIcon(getClass().getResource("/images/studios/re" + numbers1[1] + ".png")));
+        view.btnE4.setDisabledIcon(new ImageIcon(getClass().getResource("/images/studios/re" + numbers2[1] + ".png")));
+        view.btnE5.setDisabledIcon(new ImageIcon(getClass().getResource("/images/studios/re" + numbers1[2] + ".png")));
+        view.btnE6.setDisabledIcon(new ImageIcon(getClass().getResource("/images/studios/re" + numbers2[2] + ".png")));
+        view.btnE7.setDisabledIcon(new ImageIcon(getClass().getResource("/images/studios/re" + numbers1[3] + ".png")));
+        view.btnE8.setDisabledIcon(new ImageIcon(getClass().getResource("/images/studios/re" + numbers2[3] + ".png")));
+        view.btnE9.setDisabledIcon(new ImageIcon(getClass().getResource("/images/studios/re" + numbers1[4] + ".png")));
+        view.btnE10.setDisabledIcon(new ImageIcon(getClass().getResource("/images/studios/re" + numbers2[4] + ".png")));
+        view.btnE11.setDisabledIcon(new ImageIcon(getClass().getResource("/images/studios/re" + numbers1[5] + ".png")));
+        view.btnE12.setDisabledIcon(new ImageIcon(getClass().getResource("/images/studios/re" + numbers2[5] + ".png")));
+        view.btnE13.setDisabledIcon(new ImageIcon(getClass().getResource("/images/studios/re" + numbers1[6] + ".png")));
+        view.btnE14.setDisabledIcon(new ImageIcon(getClass().getResource("/images/studios/re" + numbers2[6] + ".png")));
+        view.btnE15.setDisabledIcon(new ImageIcon(getClass().getResource("/images/studios/re" + numbers1[7] + ".png")));
+        view.btnE16.setDisabledIcon(new ImageIcon(getClass().getResource("/images/studios/re" + numbers2[7] + ".png")));
         view.btnE1.setEnabled(true);
         view.btnE2.setEnabled(true);
         view.btnE3.setEnabled(true);
@@ -76,9 +75,9 @@ public class SocialViewCourseController5 extends ViewController implements Actio
             if (im1 != im2) {
                 pbtn[0].setEnabled(true);
                 pbtn[1].setEnabled(true);
-            }else{
+            } else {
                 finalizo += 1;
-                if (finalizo == 8){
+                if (finalizo == 8) {
                     JOptionPane.showMessageDialog(view, "Felicidades, usted ha ganado.");
                 }
             }

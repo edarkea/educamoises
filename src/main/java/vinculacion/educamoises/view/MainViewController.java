@@ -64,7 +64,7 @@ public class MainViewController extends ViewController implements ActionListener
         }
         if (e.getSource().equals(view.jButton4)) {
             removeView();
-            changeJPanel(new EvaluationViewController(14L, 0l, 0L, "Lengua y Literatura"));
+            changeJPanel(new EvaluationViewController(457L, 508L, 559L, "Lengua y Literatura"));
         }
         if (e.getSource().equals(view.jButton5)) {
             removeView();

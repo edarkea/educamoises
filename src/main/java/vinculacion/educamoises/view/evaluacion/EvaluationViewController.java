@@ -16,6 +16,7 @@ import vinculacion.educamoises.view.MainViewController;
 import vinculacion.educamoises.view.ViewController;
 import static vinculacion.educamoises.utils.FrameUtil.changeJPanel;
 import static vinculacion.educamoises.utils.FrameUtil.containerViews;
+import vinculacion.educamoises.view.components.Trivia;
 
 /**
  *
@@ -24,12 +25,12 @@ import static vinculacion.educamoises.utils.FrameUtil.containerViews;
 public class EvaluationViewController extends ViewController implements ActionListener, MouseListener {
 
     private final EvaluationView view = new EvaluationView();
-    private List<JPanel> preguntas = new ArrayList<>();
+    private List<Trivia> preguntas = new ArrayList<>();
     private int preguntaActual = 0;
     private final Long tercero;
     private final Long quinto;
     private final Long septimo;
-
+    
     public EvaluationViewController(Long tercero, Long quinto, Long septimo, String texto) {
         initEvent();
         this.view.text.setText(texto);
@@ -40,7 +41,7 @@ public class EvaluationViewController extends ViewController implements ActionLi
     }
 
     public void generarCuestionario(Long id) {
-        preguntas = CuestionarioUtil.generarCuestionario(new CuestionarioJpaController(ConnectionUtil.emf).findCuestionario(id));
+        preguntas = CuestionarioUtil.generarCuestionarios(new CuestionarioJpaController(ConnectionUtil.emf).findCuestionario(id));
     }
 
     @Override
@@ -50,7 +51,6 @@ public class EvaluationViewController extends ViewController implements ActionLi
 
     @Override
     public void initEvent() {
-        //view.jButton1.addActionListener(this);
         view.jButton3.addActionListener(this);
         view.jButton4.addActionListener(this);
         view.jButton5.addActionListener(this);
@@ -72,9 +72,6 @@ public class EvaluationViewController extends ViewController implements ActionLi
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        /*   if (e.getSource().equals(view.jButton1)) {
-         //   view.jTabbedPane1.add(new CuestionarioViewController(view.jTabbedPane1).getView(), "Cuestionarios");
-        }*/
         if (e.getSource().equals(view.Siguiente)) {
             preguntaActual++;
             navegarPreguntas();
@@ -173,7 +170,7 @@ public class EvaluationViewController extends ViewController implements ActionLi
         view.containerBtn.updateUI();
     }
 
-    public void addView(JPanel view) {
+    public void addView(Trivia view) {
         this.view.containerBtn.add(view, BorderLayout.CENTER);
     }
 

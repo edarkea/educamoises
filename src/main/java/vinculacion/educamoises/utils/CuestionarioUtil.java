@@ -14,12 +14,22 @@ import vinculacion.educamoises.model.Bloque;
 import vinculacion.educamoises.model.Cuestionario;
 import vinculacion.educamoises.model.Pregunta;
 import vinculacion.educamoises.model.TipoRespuesta;
+import vinculacion.educamoises.view.components.Trivia;
 
 /**
  *
  * @author Edinson Ayui
  */
 public class CuestionarioUtil {
+
+    public static ArrayList<Trivia> generarCuestionarios(Cuestionario cuestionario) {
+        ArrayList<Trivia> preguntas = new ArrayList<>();
+        Collections.sort(cuestionario.getBloques());
+        for (Bloque bloque : cuestionario.getBloques()) {
+            preguntas.add(new Trivia(bloque));
+        }
+        return preguntas;
+    }
 
     public static List<JPanel> generarCuestionario(Cuestionario cuestionario) {
         List<JPanel> preguntas_ = new ArrayList<>();
